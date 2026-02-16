@@ -1,0 +1,9 @@
+{
+  "customerId": "CUST-1001",
+  "segment": "VIP",
+  "preferences": {
+    "preferredCurrency": "SEK",
+    "units": "METRIC",
+    "showNetPrices": true
+  }
+}

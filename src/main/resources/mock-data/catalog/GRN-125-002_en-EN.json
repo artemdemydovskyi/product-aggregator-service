@@ -1,0 +1,16 @@
+{
+  "sku": "GRN-125-002",
+  "name": "Angle Grinder 125mm",
+  "description": "125mm angle grinder for cutting and grinding metal. Soft start and overload protection.",
+  "specs": {
+    "discDiameterMm": 125,
+    "powerW": 900,
+    "noLoadRpm": 11000,
+    "weightKg": 2.1,
+    "softStart": true
+  },
+  "images": [
+    "https://cdn.example.com/products/GRN-125-002/front.jpg",
+    "https://cdn.example.com/products/GRN-125-002/in-use.jpg"
+  ]
+}

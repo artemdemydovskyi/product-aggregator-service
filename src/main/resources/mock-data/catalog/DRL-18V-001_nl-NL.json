@@ -1,0 +1,16 @@
+{
+  "sku": "DRL-18V-001",
+  "name": "Accuboormachine 18V",
+  "description": "Compacte accuboormachine voor dagelijks montagewerk. Inclusief twee accu’s en een lader.",
+  "specs": {
+    "voltage": "18V",
+    "maxTorqueNm": 42,
+    "chuckSizeMm": 13,
+    "weightKg": 1.35,
+    "batteryIncluded": true
+  },
+  "images": [
+    "https://cdn.example.com/products/DRL-18V-001/front.jpg",
+    "https://cdn.example.com/products/DRL-18V-001/side.jpg"
+  ]
+}

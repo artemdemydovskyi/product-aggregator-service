@@ -1,0 +1,9 @@
+{
+  "customerId": "CUST-1001",
+  "segment": "VIP",
+  "preferences": {
+    "preferredCurrency": "EUR",
+    "units": "METRIC",
+    "showNetPrices": true
+  }
+}

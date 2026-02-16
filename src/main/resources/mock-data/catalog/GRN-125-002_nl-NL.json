@@ -1,0 +1,16 @@
+{
+  "sku": "GRN-125-002",
+  "name": "Haakse slijper 125mm",
+  "description": "Haakse slijper van 125mm voor het slijpen en doorslijpen van metaal. Soft start en overbelastingsbeveiliging.",
+  "specs": {
+    "discDiameterMm": 125,
+    "powerW": 900,
+    "noLoadRpm": 11000,
+    "weightKg": 2.1,
+    "softStart": true
+  },
+  "images": [
+    "https://cdn.example.com/products/GRN-125-002/front.jpg",
+    "https://cdn.example.com/products/GRN-125-002/in-use.jpg"
+  ]
+}

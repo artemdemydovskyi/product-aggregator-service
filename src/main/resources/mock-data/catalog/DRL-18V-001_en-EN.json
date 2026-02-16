@@ -1,0 +1,16 @@
+{
+  "sku": "DRL-18V-001",
+  "name": "Cordless Drill 18V",
+  "description": "Compact cordless drill for everyday assembly work. Includes two batteries and a charger.",
+  "specs": {
+    "voltage": "18V",
+    "maxTorqueNm": 42,
+    "chuckSizeMm": 13,
+    "weightKg": 1.35,
+    "batteryIncluded": true
+  },
+  "images": [
+    "https://cdn.example.com/products/DRL-18V-001/front.jpg",
+    "https://cdn.example.com/products/DRL-18V-001/side.jpg"
+  ]
+}
