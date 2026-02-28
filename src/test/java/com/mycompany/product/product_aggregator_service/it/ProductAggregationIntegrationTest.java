@@ -9,6 +9,7 @@ import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.DynamicPropertyRegistry;
@@ -171,7 +172,7 @@ public class ProductAggregationIntegrationTest {
     })
     public static class CatalogFailure {
 
-        @org.springframework.boot.test.web.server.LocalServerPort
+        @LocalServerPort
         int port;
 
         private RestClient rest() {
