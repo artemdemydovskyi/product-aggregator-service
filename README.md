@@ -33,17 +33,17 @@ client.pricing.url=http://localhost:${server.port}
 client.availability.url=http://localhost:${server.port}
 client.customer.url=http://localhost:${server.port}
 # Optional: fast + deterministic mocks, meaning no delay, no random failures)
-client.catalog.base-latency-ms=0
-client.catalog.jitter-ms=0
+client.catalog.base-latency=0
+client.catalog.jitter=0
 client.catalog.reliability=1.0
-client.pricing.base-latency-ms=0
-client.pricing.jitter-ms=0
+client.pricing.base-latency=0
+client.pricing.jitter=0
 client.pricing.reliability=1.0
-client.availability.base-latency-ms=0
-client.availability.jitter-ms=0
+client.availability.base-latency=0
+client.availability.jitter=0
 client.availability.reliability=1.0
-client.customer.base-latency-ms=0
-client.customer.jitter-ms=0
+client.customer.base-latency=0
+client.customer.jitter=0
 client.customer.reliability=1.0
 ```
 

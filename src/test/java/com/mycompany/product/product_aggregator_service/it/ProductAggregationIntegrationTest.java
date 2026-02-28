@@ -33,20 +33,20 @@ public class ProductAggregationIntegrationTest {
     @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
     @ActiveProfiles("mock-upstreams")
     @TestPropertySource(properties = {
-            "client.catalog.base-latency-ms=0",
-            "client.catalog.jitter-ms=0",
+            "client.catalog.base-latency=0",
+            "client.catalog.jitter=0",
             "client.catalog.reliability=1.0",
 
-            "client.pricing.base-latency-ms=0",
-            "client.pricing.jitter-ms=0",
+            "client.pricing.base-latency=0",
+            "client.pricing.jitter=0",
             "client.pricing.reliability=1.0",
 
-            "client.availability.base-latency-ms=0",
-            "client.availability.jitter-ms=0",
+            "client.availability.base-latency=0",
+            "client.availability.jitter=0",
             "client.availability.reliability=1.0",
 
-            "client.customer.base-latency-ms=0",
-            "client.customer.jitter-ms=0",
+            "client.customer.base-latency=0",
+            "client.customer.jitter=0",
             "client.customer.reliability=1.0"
     })
     public static class HappyPath {
@@ -96,14 +96,14 @@ public class ProductAggregationIntegrationTest {
             "client.availability.reliability=0.0",
             "client.customer.reliability=0.0",
 
-            "client.catalog.base-latency-ms=0",
-            "client.catalog.jitter-ms=0",
-            "client.pricing.base-latency-ms=0",
-            "client.pricing.jitter-ms=0",
-            "client.availability.base-latency-ms=0",
-            "client.availability.jitter-ms=0",
-            "client.customer.base-latency-ms=0",
-            "client.customer.jitter-ms=0"
+            "client.catalog.base-latency=0",
+            "client.catalog.jitter=0",
+            "client.pricing.base-latency=0",
+            "client.pricing.jitter=0",
+            "client.availability.base-latency=0",
+            "client.availability.jitter=0",
+            "client.customer.base-latency=0",
+            "client.customer.jitter=0"
     })
     public static class GracefulDegradation {
 

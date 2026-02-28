@@ -20,7 +20,7 @@ public class ProductAggregationServiceImpl implements ProductAggregationService 
     private final UpstreamAsyncFacade upstreamAsyncFacade;
 
     @Override
-    public ProductAggregationDto aggregate(String sku, String market, String customerId) {
+    public ProductAggregationDto  aggregate(String sku, String market, String customerId) {
         CatalogResponse catalogResponse = catalogClient.getCatalog(sku, market);
 
         CompletableFuture<PricingResponse> pricingResponseFuture =
