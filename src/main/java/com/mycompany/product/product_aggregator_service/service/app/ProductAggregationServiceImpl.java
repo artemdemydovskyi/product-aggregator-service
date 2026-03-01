@@ -10,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Supplier;
 
 @Service
 @RequiredArgsConstructor
@@ -24,13 +23,13 @@ public class ProductAggregationServiceImpl implements ProductAggregationService 
         CatalogResponse catalogResponse = catalogClient.getCatalog(sku, market);
 
         CompletableFuture<PricingResponse> pricingResponseFuture =
-                safelyCallAsync(() -> upstreamAsyncFacade.pricing(sku, market, customerId));
+                upstreamAsyncFacade.pricing(sku, market, customerId);
 
         CompletableFuture<AvailabilityResponse> availabilityResponseFuture =
-                safelyCallAsync(() -> upstreamAsyncFacade.availability(sku, market));
+                upstreamAsyncFacade.availability(sku, market);
 
         CompletableFuture<CustomerResponse> customerResponseFuture =
-                safelyCallAsync(() -> upstreamAsyncFacade.customer(customerId, market));
+                upstreamAsyncFacade.customer(customerId, market);
 
         PricingResponse pricingResponse = pricingResponseFuture.join();
         AvailabilityResponse availabilityResponse = availabilityResponseFuture.join();
@@ -45,13 +44,5 @@ public class ProductAggregationServiceImpl implements ProductAggregationService 
                 customerResponse
         );
 
-    }
-
-    private static <T> CompletableFuture<T> safelyCallAsync(Supplier<CompletableFuture<T>> asyncCall) {
-        try {
-            return asyncCall.get().exceptionally(exception -> null);
-        } catch (Exception exception) {
-            return CompletableFuture.completedFuture(null);
-        }
     }
 }

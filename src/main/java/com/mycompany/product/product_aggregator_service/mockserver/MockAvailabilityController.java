@@ -1,7 +1,6 @@
 package com.mycompany.product.product_aggregator_service.mockserver;
 
 import com.mycompany.product.product_aggregator_service.domain.responses.AvailabilityResponse;
-import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
